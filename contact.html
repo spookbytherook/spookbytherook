@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael</title>
+
+<link rel="stylesheet" href="style.css" href="font.css" href="contac.css">
+<style>
+*{overflow:auto;}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+font-family:'Amatic SC';
+font-weight:900;
+letter-spacing:5px;
+
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+color:black;
+}
+
+.container {
+ font-family:'Roboto';
+  background-color: whitesmoke;
+  padding: 20px;
+margin:50px;
+}
+
+.secbut{margin-bottom:10px;}
+
+.mn1{text-align:center;}
+
+
+</style>
+</head>
+<body>
+
+<div class="page">
+
+	
+	<div class="navbar">
+		<!--JS TRANSLATE FILE PATH-->
+		<p class="zsh">pwd<br>/<a class="nav a1"" href="index.html">home</a>/<a href="about.html" class="nav a2">about</a>/<a style="color:red" href="#" class="nav a3">contact</a>
+		</p>
+	
+		
+	</div>
+	<hr>
+	<div class="main">
+<div class="mn1">
+	<p class="pm1">Get In Touch</p>
+<div class="secbut">
+	<button class="btn btn1" id="btn" onclick="dark()">DARK</button>
+	<button class="btn btn2">TRANSLATE TO ENGLISH</button>
+</div>
+</div>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname" style="color:black;">First Name</label>
+    <input type="text" id="fname" name="firstname" >
+
+    <label for="lname" style="color:black;">Last Name</label>
+    <input type="text" id="lname" name="lastname" >
+
+    <label for="country" style="color:black;">Country</label>
+    <select id="country" name="country">
+      <option value="australia">UK</option>
+      <option value="canada">USA</option>
+      <option value="usa">Not on list.</option>
+    </select>
+
+    <label for="subject" style="color:black;">Subject</label>
+    <textarea id="subject" name="subject" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+</div>
+
+	</div>
+	</div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
